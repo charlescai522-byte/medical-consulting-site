@@ -1,4 +1,6 @@
 import './globals.css';
+import Navigation from '../components/Navigation';
+
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: 'Arial, sans-serif' }}>
+      <body>
+        <Navigation />
         {children}
       </body>
     </html>
